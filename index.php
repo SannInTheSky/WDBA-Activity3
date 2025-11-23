@@ -26,10 +26,16 @@ if($result->num_rows>0){
             echo "<td>".$row["gender"]. "</td>";
         echo "</tr>";
     }
+    echo "</table>";
 }
 
 else{
     echo "no results found.";
 }
+$conn->close();
 
 ?>
+
+<br>
+
+<a href = add.php>ADD NEW RECORD</a>
