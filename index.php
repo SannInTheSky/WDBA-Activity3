@@ -6,7 +6,7 @@ $sql = "SELECT id, student_number,
 concat(first_name, ' ', middle_name, ' ', last_name) AS 'Full_Name',
 CASE gender WHEN 0 THEN  'Male' WHEN 1 THEN 'Female' 
 END as 'gender' 
-FROM school_db.students ORDER BY id asc limit 100";
+FROM school_db.students ORDER BY id desc limit 100";
 
 $result = $conn->query($sql);
 
